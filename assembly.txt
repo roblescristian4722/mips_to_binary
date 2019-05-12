@@ -1,0 +1,25 @@
+#Aquí se escriben las instrucciones ensamblador de MIPS
+#y son usadas por compilador.py para crear el archivo que
+#contiene las instrucciones en binario
+
+# los # sirven como comentarios y el compilador también
+# funciona si hay saltos de línea en este texto
+
+#Tipo R (ejemplo): add rd, rs, rt
+
+#add en datapath: | 000000 | rsx5 | rtx5 | rdx5 | 00000 | 100000
+add $1, $30, $10
+
+#resta
+sub $4, $5, $11
+
+#multiplicacion
+mul $7, $10, $30
+
+#division
+div $6, $20, $2
+
+#Tipo I (ejemplo): addi rd, rs, #inmediato
+
+#suma inmediata
+addi $10, $1, #40
